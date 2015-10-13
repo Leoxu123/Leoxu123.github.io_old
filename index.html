@@ -255,8 +255,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p><strong>4. Cannot GET /</strong><br>hexo init 和 npm install 一起执行</p>
 <blockquote>
-<font color="red">上面的问题都可以通过修改package.json中的文件，将需要安装的模块前^去掉，再用npm install即可</font>
-
+<p><font color="red">上面的问题都可以通过修改package.json中的文件，将需要安装的模块前^去掉，再用npm install即可</font></p><p></p><p></p>
 </blockquote>
 <p><strong>5. Github page build failed</strong><br>错误是 The submodule <code>themes/你的主题</code> was not properly initialized with a <code>.gitmodules</code> file，你需要</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git rm -rf themes/<span class="variable">$yourthemes</span> .git</span><br></pre></td></tr></table></figure>
