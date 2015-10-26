@@ -205,6 +205,79 @@
           
           
             
+              <a class="post-title-link" href="/2015/10/26/A-revolutional-full-of-water-idea/" itemprop="url">
+                A revolutional(full-of-water)idea
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-26T09:56:22+08:00" content="2015-10-26">
+            2015-10-26
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/10/26/A-revolutional-full-of-water-idea/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/26/A-revolutional-full-of-water-idea/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><p><strong>深度拖延龟速看完两篇paper后，发现一个新大（水）陆（箱）！</strong></p>
+<p><a href="http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf" target="_blank" rel="external">1. Topic Word Embedding</a> 这篇文章主要解决当前被玩的最多word2ec模型中<br>没有解决的一词多义(polysemy)问题。先用LDA得到每个词的topic，然后略微修改word2vec模型，在预测词的时候加入了topic信息，每个词的词向量最终由word和<br>topic向量的连接。</p>
+<p><a href="http://ofey.me/papers/wordrep_acl2015.pdf" target="_blank" rel="external">2. Learning Word Representations by Jointly Modeling Syntagmatic and Paradigmatic Relations</a><br>这篇文章主要是提高word2vec的表示能力，基于word2vec模型的假设，出现在相似语境中的词更相似（在向量空间更近），这仅仅反映了语言学中的聚合(paradigmatic)<br>关系。另外一个重要的关系是组合(syntagmatic)关系。例如:</p>
+<p><font color="red">远的不是距离，而是次元啊</font></p><p></p>这里<strong>远</strong>和<strong>距离</strong>就是组合关系<br>然后呢，做法相当类似。常见的解决组合关系的模型是LSA，直接将objective function加入一个词在文档中出现的概率.<p></p>
+<p>比较两个模型，它们都是找出word2vec表征能力在linguistic欠缺,它们的objective function更是惊人的相似。那是不是可以找到word2vec的其他在linguistic rule<br>上的欠缺以及相应的模型，找个方法把它们结合起来？</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/10/21/Archive-for-nlp-papers/" itemprop="url">
                 Archive for nlp papers
               </a>
@@ -383,7 +456,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

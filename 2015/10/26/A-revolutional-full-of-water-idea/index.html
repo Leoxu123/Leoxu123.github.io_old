@@ -39,16 +39,22 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="coursera上刚开了一个nlp课程，这门课跟前面斯坦福和哥伦比亚在coursera上类似课程不同之处在于更注重linguistic。课程上给出了nlp方面会议和期刊的论文库链接和这些论文引用的链接，一直想找这个，终于发现了1.ACL anthology2.ACL Anthology Network">
+<meta name="description" content="深度拖延龟速看完两篇paper后，发现一个新大（水）陆（箱）！
+1. Topic Word Embedding 这篇文章主要解决当前被玩的最多word2ec模型中没有解决的一词多义(polysemy)问题。先用LDA得到每个词的topic，然后略微修改word2vec模型，在预测词的时候加入了topic信息，每个词的词向量最终由word和topic向量的连接。
+2. Learning Word R">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Archive for nlp papers">
-<meta property="og:url" content="http://jianxume.com/2015/10/21/Archive-for-nlp-papers/index.html">
+<meta property="og:title" content="A revolutional(full-of-water)idea">
+<meta property="og:url" content="http://jianxume.com/2015/10/26/A-revolutional-full-of-water-idea/index.html">
 <meta property="og:site_name" content="Yet another coding peasant">
-<meta property="og:description" content="coursera上刚开了一个nlp课程，这门课跟前面斯坦福和哥伦比亚在coursera上类似课程不同之处在于更注重linguistic。课程上给出了nlp方面会议和期刊的论文库链接和这些论文引用的链接，一直想找这个，终于发现了1.ACL anthology2.ACL Anthology Network">
-<meta property="og:updated_time" content="2015-10-21T10:08:32.000Z">
+<meta property="og:description" content="深度拖延龟速看完两篇paper后，发现一个新大（水）陆（箱）！
+1. Topic Word Embedding 这篇文章主要解决当前被玩的最多word2ec模型中没有解决的一词多义(polysemy)问题。先用LDA得到每个词的topic，然后略微修改word2vec模型，在预测词的时候加入了topic信息，每个词的词向量最终由word和topic向量的连接。
+2. Learning Word R">
+<meta property="og:updated_time" content="2015-10-26T03:15:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Archive for nlp papers">
-<meta name="twitter:description" content="coursera上刚开了一个nlp课程，这门课跟前面斯坦福和哥伦比亚在coursera上类似课程不同之处在于更注重linguistic。课程上给出了nlp方面会议和期刊的论文库链接和这些论文引用的链接，一直想找这个，终于发现了1.ACL anthology2.ACL Anthology Network">
+<meta name="twitter:title" content="A revolutional(full-of-water)idea">
+<meta name="twitter:description" content="深度拖延龟速看完两篇paper后，发现一个新大（水）陆（箱）！
+1. Topic Word Embedding 这篇文章主要解决当前被玩的最多word2ec模型中没有解决的一词多义(polysemy)问题。先用LDA得到每个词的topic，然后略微修改word2vec模型，在预测词的时候加入了topic信息，每个词的词向量最终由word和topic向量的连接。
+2. Learning Word R">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -58,7 +64,7 @@
   };
 </script>
 
-  <title> Archive for nlp papers | Yet another coding peasant </title>
+  <title> A revolutional(full-of-water)idea | Yet another coding peasant </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -204,7 +210,7 @@
           
           
             
-              Archive for nlp papers
+              A revolutional(full-of-water)idea
             
           
         </h1>
@@ -213,8 +219,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-10-21T17:12:00+08:00" content="2015-10-21">
-            2015-10-21
+          <time itemprop="dateCreated" datetime="2015-10-26T09:56:22+08:00" content="2015-10-26">
+            2015-10-26
           </time>
         </span>
 
@@ -224,8 +230,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/10/21/Archive-for-nlp-papers/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/21/Archive-for-nlp-papers/" itemprop="commentsCount"></span>
+              <a href="/2015/10/26/A-revolutional-full-of-water-idea/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/26/A-revolutional-full-of-water-idea/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -239,7 +245,11 @@
       
 
       
-        <span itemprop="articleBody"><p>coursera上刚开了一个nlp课程，这门课跟前面斯坦福和哥伦比亚在coursera上类似课程不同之处在于更注重linguistic。<br>课程上给出了nlp方面会议和期刊的论文库链接和这些论文引用的链接，一直想找这个，终于发现了<br><a href="https://www.aclweb.org/anthology/" target="_blank" rel="external">1.ACL anthology</a><br><a href="http://clair.eecs.umich.edu/aan/index.php" target="_blank" rel="external">2.ACL Anthology Network</a></p>
+        <span itemprop="articleBody"><p><strong>深度拖延龟速看完两篇paper后，发现一个新大（水）陆（箱）！</strong></p>
+<p><a href="http://nlp.csai.tsinghua.edu.cn/~lzy/publications/aaai2015_twe.pdf" target="_blank" rel="external">1. Topic Word Embedding</a> 这篇文章主要解决当前被玩的最多word2ec模型中<br>没有解决的一词多义(polysemy)问题。先用LDA得到每个词的topic，然后略微修改word2vec模型，在预测词的时候加入了topic信息，每个词的词向量最终由word和<br>topic向量的连接。</p>
+<p><a href="http://ofey.me/papers/wordrep_acl2015.pdf" target="_blank" rel="external">2. Learning Word Representations by Jointly Modeling Syntagmatic and Paradigmatic Relations</a><br>这篇文章主要是提高word2vec的表示能力，基于word2vec模型的假设，出现在相似语境中的词更相似（在向量空间更近），这仅仅反映了语言学中的聚合(paradigmatic)<br>关系。另外一个重要的关系是组合(syntagmatic)关系。例如:</p>
+<p><font color="red">远的不是距离，而是次元啊</font></p><p></p>这里<strong>远</strong>和<strong>距离</strong>就是组合关系<br>然后呢，做法相当类似。常见的解决组合关系的模型是LSA，直接将objective function加入一个词在文档中出现的概率.<p></p>
+<p>比较两个模型，它们都是找出word2vec表征能力在linguistic欠缺,它们的objective function更是惊人的相似。那是不是可以找到word2vec的其他在linguistic rule<br>上的欠缺以及相应的模型，找个方法把它们结合起来？</p>
 </span>
       
     </div>
@@ -257,13 +267,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/10/26/A-revolutional-full-of-water-idea/" rel="prev">A revolutional(full-of-water)idea</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/10/12/用-hexo-搭建博客/" rel="next">用 hexo 搭建博客</a>
+              <a href="/2015/10/21/Archive-for-nlp-papers/" rel="next">Archive for nlp papers</a>
             
           </div>
         </div>
@@ -311,8 +319,8 @@
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/10/21/Archive-for-nlp-papers/"
-                   data-title="Archive for nlp papers" data-url="http://jianxume.com/2015/10/21/Archive-for-nlp-papers/">
+              <div class="ds-thread" data-thread-key="2015/10/26/A-revolutional-full-of-water-idea/"
+                   data-title="A revolutional(full-of-water)idea" data-url="http://jianxume.com/2015/10/26/A-revolutional-full-of-water-idea/">
               </div>
             
           </div>
